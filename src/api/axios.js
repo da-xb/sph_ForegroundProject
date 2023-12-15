@@ -22,7 +22,7 @@ import store from "@/store";
 // 利用axios对象的方法create
 const requestPack = axios.create({
     timeout: 5000,//配置请求超时时间
-    baseURL: "/api",  //（基础路径）baseURL 将自动加在 url 前面，除非 url 是一个绝对 URL。
+    baseURL: process.env.VUE_APP_BASE_API,  //（基础路径）baseURL 将自动加在 url 前面，除非 url 是一个绝对 URL。
 })
 
 
